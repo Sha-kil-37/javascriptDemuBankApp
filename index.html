@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>class 34</title>
+    <link
+      rel="stylesheet"
+      href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-[#F56DA1] h-screen flex justify-center items-center">
+    <div class="container mx-auto">
+      <div
+        class="h-[400px] w-[300px] mx-auto rounded-xl bg bg-gradient-to-r from-green-100 to-green-200 relative"
+      >
+        <div
+          class="h-[120px] w-[120px] rounded-full mx-auto"
+          style="background: url(./images/userlogo.png) no-repeat center/cover"
+        ></div>
+        <div class="mt-10 text-center">
+          <input
+            class="px-3 py-1 outline-none"
+            type="text"
+            placeholder="Enter Your Name"
+            id="inputone"
+          />
+
+          <input
+            class="mt-2 px-3 py-1 outline-none"
+            type="email"
+            placeholder="Enter Your Email"
+            id="inputtwo"
+          />
+
+          <div class="mt-2 relative">
+            <i
+              class="fa-regular fa-eye-slash absolute right-[50px] top-2 text-slate-900 cursor-pointer"
+              id="icon"
+            ></i>
+            <i
+              class="fa-solid fa-eye absolute right-[50px] top-2 text-slate-900 hidden cursor-pointer"
+              id="icontwo"
+            ></i>
+            <input
+              class="px-3 py-1 outline-none"
+              type="password"
+              placeholder="Enter Your Password"
+              id="inputthree"
+            />
+          </div>
+
+          <p id="fildmas" class="text-red-600 font-semibold mt-3"></p>
+          <button
+            type="submit"
+            class="block mx-auto mt-5 text-xl font-bold text-white py-1 px-2 bg-[#F56DA1] rounded-md"
+            id="btn"
+          >
+            Login
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/login.js"></script>
+  </body>
+</html>

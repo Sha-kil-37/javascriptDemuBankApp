@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login page</title>
+    <link
+      rel="stylesheet"
+      href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="container mx-auto relative">
+      <div id="userpinbox" class="h-screen w-full bg-[#F56DA1] relative hidden">
+        <div
+          class="w-[300px] h-[200px] bg-[#03CEA4] rounded-md absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-center py-5 px-5"
+        >
+          <div class="mr-4 mt-3 w-full">
+            <i
+              onclick="removepinbox()"
+              class="fa-solid fa-trash text-[#F56DA1] text-xl cursor-pointer"
+            >
+            </i>
+          </div>
+
+          <div class="mt-4">
+            <input
+              id="usercashinpassinput"
+              class="px-4 py-2 outline-none"
+              type="number"
+              placeholder="Your 4-Digit Pin"
+            />
+          </div>
+          <p
+            id="usercashinpassalert"
+            class="mt-2 font-semibold text-lg text-white"
+          ></p>
+
+          <button
+            class="mt-3 py-1 px-5 rounded-md font-2xl font-semibold bg-[#F56DA1] text-white"
+            onclick="cashinfuntion()"
+          >
+            PIN ?
+          </button>
+        </div>
+      </div>
+
+      <div class="bg-[#F56DA1] py-10">
+        <div
+          class="h-[70px] w-[230px] rounded-full mx-auto items-center flex bg-white"
+        >
+          <div
+            class="w-[30%] bg-[#03CEA4] h-full rounded-full flex items-center justify-center"
+          >
+            <i
+              class="fa-solid fa-bangladeshi-taka-sign text-2xl text-white"
+            ></i>
+          </div>
+
+          <div class="w-[70%] text-center">
+            <span class="text-lg font-semibold" id="myblns">0.0</span>
+          </div>
+        </div>
+        <div class="flex mt-7 justify-between">
+          <div
+            class="border-2 border-solid border-white py-5 px-2 text-center rounded-md w-[19%]"
+          >
+            <h2 class="text-xl font-semibold capitalize text-white mb-4">
+              Cash In
+            </h2>
+            <input
+              id="cashin"
+              class="py-2 px-3 outline-none border-hidden"
+              type="number"
+            />
+            <p id="inputalert" class="hidden mt-2 font-semibold font-2xl">
+              Fill Amount
+            </p>
+            <button
+              id="cashinbtn"
+              class="mt-5 bg-white font-semibold text-[#F56DA1] rounded-md px-2 py-2"
+            >
+              Cash In
+            </button>
+          </div>
+
+          <div
+            class="border-2 border-solid border-white py-5 px-2 text-center rounded-md w-[19%]"
+          >
+            <h2 class="text-xl font-semibold capitalize text-white mb-4">
+              Cash Out
+            </h2>
+            <input id="cashout" class="py-2 px-2 outline-none" type="number" />
+            <button
+              id="cashoutbtn"
+              class="mt-5 bg-white font-semibold text-[#F56DA1] rounded-md px-2 py-2"
+            >
+              Cash Out
+            </button>
+          </div>
+
+          <div
+            class="border-2 border-solid border-white py-5 px-2 text-center rounded-md w-[19%]"
+          >
+            <h2 class="text-xl font-semibold capitalize text-white mb-4">
+              Mobile Recharge
+            </h2>
+            <input
+              id="mobilerecharge"
+              class="py-2 px-3 outline-none"
+              type="number"
+            />
+            <button
+              id="mobilerechargebtn"
+              class="mt-5 bg-white font-semibold text-[#F56DA1] rounded-md py-2 px-2"
+            >
+              Recharge
+            </button>
+          </div>
+
+          <div
+            class="border-2 border-solid border-white py-5 px-2 text-center rounded-md w-[19%]"
+          >
+            <h2 class="text-xl font-semibold capitalize text-white mb-4">
+              Send Money
+            </h2>
+            <input
+              id="sendmoney"
+              class="py-2 outline-none px-2"
+              type="number"
+            />
+            <button
+              id="sendmoneybtn"
+              class="mt-5 bg-white font-semibold text-[#F56DA1] rounded-md px-2 py-2"
+            >
+              Send Mony
+            </button>
+          </div>
+          <!-- <i
+            onclick="notifunction()"
+            class="mr-10 fa-regular fa-bell text-2xl cursor-pointer text-white absolute bottom-[250px] right-[100px]"
+          ></i> -->
+          <div
+            id="notidiv"
+            class="w-[19%] text-center rounded-md bg-green-50 px-3 py-3 h-[188px] overflow-y-scroll"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
